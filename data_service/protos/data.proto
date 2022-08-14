@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package post;
+
+service DataService {
+  rpc CreatePost(Link) returns (EmptyResp);
+}
+
+message EmptyResp {}
+
+message Link {
+  string url = 1;
+}
+message Pages{
+  repeated Post Posts = 1;
+}
+
+message Post {
+    string id = 1;
+    string user_id = 2;
+    string title = 3;
+    string body = 4;
+    string created_at = 5;
+    string updated_at = 6;
+    string deleted_at = 7;
+}

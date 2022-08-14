@@ -1,0 +1,45 @@
+version: '3.8'
+
+services:
+  data_service:
+    container_name: data_service
+    build:  ./data_service
+    depends_on:
+      - "dbpost"
+    ports:
+      - "9000:9000"
+  
+  post_service:
+    container_name: post_service
+    build:  ./post_serice
+    depends_on:
+      - "dbpost"
+    ports:
+      - "8000:8000"
+
+  api:
+    container_name: api
+    build:  ./api_getaway
+    depends_on:
+      - "data_service"
+      - "post_service"
+    ports:
+      - "8090:8090"
+
+  dbpost:
+    container_name: dbpost
+    image:  postgres:14.1
+    environment:
+      POSTGRES_DATABASE:  postdb
+      POSTGRES_USER:  hatsker
+      POSTGRES_PASSWORD: 1
+    expose:
+      - 5434
+    ports:
+      - "5434:5434"
+    volumes:
+      - dbdata:/var/lib/postgresql/data
+    command: -p 5434
+
+volumes:
+  dbdata:

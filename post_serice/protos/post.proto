@@ -1,0 +1,47 @@
+syntax = "proto3";
+
+import "data.proto";
+
+package post;
+
+service PostService{
+    rpc GetAllPost(Empty) returns (GetAllRes);
+    rpc GetPost(GetPostReq) returns (Posts);
+    rpc DeletePost(DelPostReq) returns (Empty);
+    rpc Update(UpdatePostReq) returns (Posts);
+}
+
+message Empty{
+
+}
+
+message GetAllRes{
+    repeated Posts posts=1;
+}
+
+message Posts{
+    string id =1;
+    string user_id =2;
+    string title =3;
+    string body =4;
+
+}
+
+message GetPostReq{
+    string id =1;
+}
+
+message DelPostReq{
+    string id =1;
+}
+
+message UpdatePostReq{
+    string id =1;
+    string user_id =2;
+    string title =3;
+    string body =4;
+    
+}
+
+
+

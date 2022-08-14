@@ -1,0 +1,116 @@
+definitions:
+  v1.Link:
+    properties:
+      url:
+        type: string
+    type: object
+  v1.Post:
+    properties:
+      body:
+        type: string
+      id:
+        type: string
+      title:
+        type: string
+      user_id:
+        type: string
+    type: object
+info:
+  contact: {}
+paths:
+  /v1/posts:
+    post:
+      consumes:
+      - application/json
+      description: This API for creating a new post
+      parameters:
+      - description: body
+        in: body
+        name: body
+        required: true
+        schema:
+          $ref: '#/definitions/v1.Link'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: ""
+      summary: Create new post
+      tags:
+      - Post
+  /v1/users/{id}:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: Post_id
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+      summary: Get post summary
+      tags:
+      - post
+  /v1/users/allpost:
+    get:
+      consumes:
+      - application/json
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+      summary: Get post summary
+      tags:
+      - post
+  /v1/users/delete/{id}:
+    delete:
+      consumes:
+      - application/json
+      parameters:
+      - description: Post_id
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: Succesfully
+      summary: Delete post summary
+      tags:
+      - user
+  /v1/users/update:
+    put:
+      consumes:
+      - application/json
+      parameters:
+      - description: post body
+        in: body
+        name: post
+        required: true
+        schema:
+          $ref: '#/definitions/v1.Post'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: Succesfully
+      summary: update post summary
+      tags:
+      - user
+swagger: "2.0"
