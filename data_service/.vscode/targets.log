@@ -1,6 +1,4 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
-make: *** No rule to make target 'all'.  Stop.
-
 # GNU Make 4.2.1
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2016 Free Software Foundation, Inc.
@@ -8,7 +6,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sun Aug 14 13:23:12 2022
+# Make data base, printed on Mon Aug 15 07:16:21 2022
 
 # Variables
 
@@ -49,7 +47,7 @@ VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupp
 # environment
 _ = /usr/bin/code
 # environment
-JOURNAL_STREAM = 8:64398
+JOURNAL_STREAM = 8:68720
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
 # makefile (from 'Makefile', line 1)
@@ -71,7 +69,7 @@ VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
 DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
 # environment
-MANAGERPID = 5253
+MANAGERPID = 4673
 # environment
 LESSOPEN = | /usr/bin/lesspipe %s
 # environment
@@ -89,7 +87,7 @@ GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
 GJS_DEBUG_OUTPUT = stderr
 # environment
-SESSION_MANAGER = local/hatsker:@/tmp/.ICE-unix/5561,unix/hatsker:/tmp/.ICE-unix/5561
+SESSION_MANAGER = local/hatsker:@/tmp/.ICE-unix/5003,unix/hatsker:/tmp/.ICE-unix/5003
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
@@ -99,7 +97,7 @@ XDG_MENU_PREFIX = gnome-
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-INVOCATION_ID = c652f886d1774fc1b66f49da4fe92404
+INVOCATION_ID = e00bd7c7b60f4e34b4a82da0e1d2f96e
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -109,7 +107,7 @@ XDG_SESSION_DESKTOP = ubuntu
 # environment
 SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 186883
+GIO_LAUNCHED_DESKTOP_FILE_PID = 9898
 # automatic
 %F = $(notdir $%)
 # environment
@@ -119,7 +117,7 @@ PWD = /home/jamshidbek/go/src/github.com/Hatsker01/Iman_project/data_service
 # default
 .LOADED := 
 # environment
-SSH_AGENT_PID = 5524
+SSH_AGENT_PID = 4966
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = Unity
 # environment
@@ -161,7 +159,7 @@ MAKECMDGOALS := all
 # environment
 QT_IM_MODULE = ibus
 # environment
-SHLVL = 1
+SHLVL = 2
 # environment
 GNOME_SHELL_SESSION_MODE = ubuntu
 # default
@@ -251,7 +249,7 @@ LANG = C
 # environment
 TERM = xterm-256color
 # environment
-VSCODE_PID = 186883
+VSCODE_PID = 9898
 # variable set hash-table stats:
 # Load=120/1024=12%, Rehash=0, Collisions=23/145=16%
 
@@ -261,9 +259,9 @@ VSCODE_PID = 186883
 
 # Directories
 
-# . (device 57, inode 726424): 14 files, no impossibilities.
+# . (device 52, inode 726424): 15 files, no impossibilities.
 
-# 14 files, no impossibilities in 1 directories.
+# 15 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -289,6 +287,9 @@ proto-gen:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
+ 
+make: *** No rule to make target 'all'.  Stop.
+
 #  Last modified 2022-05-24 18:41:58
 #  File has been updated.
 #  Successfully updated.
@@ -314,12 +315,12 @@ build:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 21 / storage = 162 B / avg = 7 B
-# current buf: size = 8162 B / used = 162 B / count = 21 / avg = 7 B
+# strcache buffers: 1 (0) / strings = 22 / storage = 173 B / avg = 7 B
+# current buf: size = 8162 B / used = 173 B / count = 22 / avg = 7 B
 
-# strcache performance: lookups = 27 / hit rate = 22%
+# strcache performance: lookups = 28 / hit rate = 21%
 # hash-table stats:
-# Load=21/8192=0%, Rehash=0, Collisions=1/27=4%
-# Finished Make data base on Sun Aug 14 13:23:12 2022
+# Load=22/8192=0%, Rehash=0, Collisions=1/28=4%
+# Finished Make data base on Mon Aug 15 07:16:21 2022
 
  

@@ -5,7 +5,7 @@ import (
 	"github.com/Hatsker01/Iman_project/api_getaway/config"
 	"github.com/Hatsker01/Iman_project/api_getaway/pkg/logger"
 	services "github.com/Hatsker01/Iman_project/api_getaway/services"
-	"github.com/Hatsker01/Iman_project/api_getaway/storage/repo"
+
 	"github.com/gin-gonic/gin"
 
 	_ "github.com/Hatsker01/Iman_project/api_getaway/api/docs"
@@ -18,7 +18,7 @@ type Option struct {
 	Conf           config.Config
 	Logger         logger.Logger
 	ServiceManager services.IServiceManager
-	RedisRepo      repo.RepositoryStorage
+
 }
 
 func New(option Option) *gin.Engine {
@@ -31,7 +31,7 @@ func New(option Option) *gin.Engine {
 		Logger:         option.Logger,
 		ServiceManager: option.ServiceManager,
 		Cfg:            option.Conf,
-		Redis:          option.RedisRepo,
+
 	})
 	api := router.Group("/v1")
 	api.GET("/users/:id", handlerV1.GetPost)

@@ -10,11 +10,10 @@ import (
 
 	pb "github.com/Hatsker01/Iman_project/data_service/genproto"
 
-	// l "github.com/Hatsker01/Iman_project/data_service/pkg/logger"
-	// "github.com/Hatsker01/Iman_project/data_service/storage"
+
 	l "github.com/Hatsker01/Iman_project/data_service/pkg/logger"
 
-	// "github.com/Hatsker01/Iman_project/data_service/storage"
+
 	cl "github.com/Hatsker01/Iman_project/data_service/service/grpc_client"
 	"github.com/Hatsker01/Iman_project/data_service/storage"
 	"github.com/jmoiron/sqlx"

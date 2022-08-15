@@ -1,19 +1,15 @@
 package main
 
 import (
-	//"fmt"
 
 	"github.com/Hatsker01/Iman_project/api_getaway/api"
 	"github.com/Hatsker01/Iman_project/api_getaway/config"
 	"github.com/Hatsker01/Iman_project/api_getaway/pkg/logger"
 	services "github.com/Hatsker01/Iman_project/api_getaway/services"
-	//	"github.com/Hatsker01/Iman_project/api_getaway/storage/redis"
-	//"github.com/Hatsker01/Iman_project/api_getaway/storage/repo"
-	//"github.com/gomodule/redigo/redis"
 )
 
 func main() {
-	//var redisRepo repo.RepositoryStorage
+
 	cfg := config.Load()
 	log := logger.New(cfg.LogLevel, "api")
 

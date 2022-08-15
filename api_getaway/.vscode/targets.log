@@ -8,10 +8,12 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sun Aug 14 13:56:41 2022
+# Make data base, printed on Mon Aug 15 07:13:06 2022
 
 # Variables
 
+# environment
+VSCODE_GIT_ASKPASS_MAIN = /usr/share/code/resources/app/extensions/git/dist/askpass-main.js
 # 'override' directive
 GNUMAKEFLAGS := 
 # automatic
@@ -43,13 +45,11 @@ CURDIR := /home/jamshidbek/go/src/github.com/Hatsker01/Iman_project/api_getaway
 # makefile
 SHELL = /bin/sh
 # environment
-VTE_VERSION = 6003
-# environment
 VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
 # environment
 _ = /usr/bin/code
 # environment
-JOURNAL_STREAM = 8:64398
+JOURNAL_STREAM = 8:68720
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
 # makefile (from 'Makefile', line 1)
@@ -71,7 +71,7 @@ VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
 DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
 # environment
-MANAGERPID = 5253
+MANAGERPID = 4673
 # environment
 LESSOPEN = | /usr/bin/lesspipe %s
 # environment
@@ -89,7 +89,7 @@ GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
 GJS_DEBUG_OUTPUT = stderr
 # environment
-SESSION_MANAGER = local/hatsker:@/tmp/.ICE-unix/5561,unix/hatsker:/tmp/.ICE-unix/5561
+SESSION_MANAGER = local/hatsker:@/tmp/.ICE-unix/5003,unix/hatsker:/tmp/.ICE-unix/5003
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
@@ -99,7 +99,7 @@ XDG_MENU_PREFIX = gnome-
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-INVOCATION_ID = c652f886d1774fc1b66f49da4fe92404
+INVOCATION_ID = e00bd7c7b60f4e34b4a82da0e1d2f96e
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -109,7 +109,7 @@ XDG_SESSION_DESKTOP = ubuntu
 # environment
 SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 186883
+GIO_LAUNCHED_DESKTOP_FILE_PID = 9898
 # automatic
 %F = $(notdir $%)
 # environment
@@ -119,9 +119,9 @@ PWD = /home/jamshidbek/go/src/github.com/Hatsker01/Iman_project/api_getaway
 # default
 .LOADED := 
 # environment
-SSH_AGENT_PID = 5524
+SSH_AGENT_PID = 4966
 # environment
-ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
+ORIGINAL_XDG_CURRENT_DESKTOP = Unity
 # environment
 GTK_MODULES = gail:atk-bridge
 # environment
@@ -150,6 +150,8 @@ GNOME_DESKTOP_SESSION_ID = this-is-deprecated
 ^D = $(patsubst %/,%,$(dir $^))
 # environment
 LC_TIME = uz_UZ.UTF-8
+# environment
+VSCODE_GIT_IPC_HANDLE = /run/user/1000/vscode-git-42881cc860.sock
 # environment
 COLORTERM = truecolor
 # default
@@ -182,6 +184,10 @@ APP = template
 MAKE_COMMAND := make
 # environment
 OLDPWD = /home/jamshidbek/go/src/github.com/Hatsker01/Iman_project
+# environment
+VSCODE_GIT_ASKPASS_EXTRA_ARGS = --ms-enable-electron-run-as-node
+# environment
+TERM_PROGRAM = vscode
 # default
 .VARIABLES := 
 # automatic
@@ -190,12 +196,16 @@ OLDPWD = /home/jamshidbek/go/src/github.com/Hatsker01/Iman_project
 VSCODE_IPC_HOOK = /run/user/1000/vscode-71efb8d6-1.70.1-main.sock
 # makefile (from 'Makefile', line 1)
 CURRENT_DIR = $(shell pwd)
+# environment
+VSCODE_GIT_ASKPASS_NODE = /usr/share/code/code
 # makefile
 MAKEFLAGS = pqrR
 # environment
 MFLAGS = -pqrR
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
+# environment
+TERM_PROGRAM_VERSION = 1.70.1
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
 # environment
@@ -208,6 +218,8 @@ NO_AT_BRIDGE = 1
 QT_ACCESSIBILITY = 1
 # environment
 DEFAULTS_PATH = /usr/share/gconf/ubuntu.default.path
+# environment
+GIT_ASKPASS = /usr/share/code/resources/app/extensions/git/dist/askpass.sh
 # default
 MAKEFILES := 
 # environment
@@ -220,12 +232,8 @@ LC_MEASUREMENT = uz_UZ.UTF-8
 LC_ALL = C
 # environment
 GJS_DEBUG_TOPICS = JS ERROR;JS LOG
-# environment
-GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/728d5d84_a09d_46f9_9f21_faba49a7c60c
 # automatic
 ^F = $(notdir $^)
-# environment
-GNOME_TERMINAL_SERVICE = :1.4368
 # default
 SUFFIXES := 
 # environment
@@ -247,9 +255,9 @@ LANG = C
 # environment
 TERM = xterm-256color
 # environment
-VSCODE_PID = 186883
+VSCODE_PID = 9898
 # variable set hash-table stats:
-# Load=118/1024=12%, Rehash=0, Collisions=24/143=17%
+# Load=122/1024=12%, Rehash=0, Collisions=25/147=17%
 
 # Pattern-specific Variable Values
 
@@ -257,7 +265,7 @@ VSCODE_PID = 186883
 
 # Directories
 
-# . (device 57, inode 1549756): 16 files, no impossibilities.
+# . (device 52, inode 1549756): 16 files, no impossibilities.
 
 # 16 files, no impossibilities in 1 directories.
 
@@ -330,8 +338,7 @@ lint:
 
 # strcache performance: lookups = 33 / hit rate = 24%
 # hash-table stats:
- 
 # Load=25/8192=0%, Rehash=0, Collisions=1/33=3%
-# Finished Make data base on Sun Aug 14 13:56:41 2022
+# Finished Make data base on Mon Aug 15 07:13:06 2022
 
  
